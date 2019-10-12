@@ -39,8 +39,8 @@ public class LanternController : MonoBehaviour
         float vert = Input.GetAxis("Vertical");
         this.velocity += new Vector3(horz, 0, vert);
 
-        // The lantern just floats upwards
-        this.transform.position = this.transform.position + (Vector3.up + this.velocity.normalized) * (this.Speed * Time.deltaTime);
+        // The lantern just floats upwards (with sideway sway)
+        this.transform.position = this.transform.position + (this.Speed * Vector3.up + this.velocity.normalized) * Time.deltaTime;
     }
 
     public void setTrackingTransform(Transform transform, Vector3 trackingOffset)
