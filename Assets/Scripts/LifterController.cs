@@ -8,15 +8,14 @@ public class LifterController : MonoBehaviour
     private bool firedAlready = false;
 
     private Animator animator;
-    private Transform hand;
 
     public GameObject LanternPrefab;
     public Vector3 PlacementOffset;
+    public Transform ReferencePoint;
 
     void Start()
     {
         this.animator = this.GetComponent<Animator>();
-        this.hand = this.transform.Find("Armature/Hand.right");
     }
 
     void Update()
@@ -30,11 +29,13 @@ public class LifterController : MonoBehaviour
 
             this.firedAlready = true;
 
-            animator.Play("Lift lantern off");
-            GameObject obj = GameObject.Instantiate(LanternPrefab, this.transform.position, Quaternion.Euler(-90, 0, 0));
+            // For some reason, using triggers in Animator (state-machine)
+            // causes the next part to break... (disappoint)
+            animator.Play("Standstill to Lift");
 
-            LanternController lanternHack = obj.GetComponent<LanternController>();
-            lanternHack.setTrackingTransform(this.hand, this.PlacementOffset);
+            GameObject obj = GameObject.Instantiate(LanternPrefab, this.transform.position, Quaternion.Euler(-90, 0, 0));
+            LanternController lanternController = obj.GetComponent<LanternController>();
+            lanternController.setTrackingTransform(this.ReferencePoint, this.PlacementOffset);
         }
     }
 }

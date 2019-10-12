@@ -140,7 +140,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LanternPrefab: {fileID: 7925422718908720274, guid: 681b17e90e84748c286c35c194484f33,
     type: 3}
-  PlacementOffset: {x: 0, y: 0.25, z: 1}
+  PlacementOffset: {x: 0, y: 0.25, z: 0.85}
+  ReferencePoint: {fileID: 2146388515}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,3 +434,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2146388515 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8797527237377556982, guid: b50f4dc1908cf4d88895dd715af7957e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1712428688}
+  m_PrefabAsset: {fileID: 0}
