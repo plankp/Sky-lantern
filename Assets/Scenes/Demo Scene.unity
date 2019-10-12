@@ -142,6 +142,7 @@ MonoBehaviour:
     type: 3}
   PlacementOffset: {x: 0, y: 0.25, z: 0.85}
   ReferencePoint: {fileID: 2146388515}
+  Camera: {fileID: 963194229}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
