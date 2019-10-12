@@ -4,11 +4,38 @@ using UnityEngine;
 
 public class LanternController : MonoBehaviour
 {
+    private Transform trackingTransform;
+    private Vector3 previousFrame;
+    private Vector3 trackingOffset;
+
     public float Speed = 1.0f;
 
     void Update()
     {
-        // The lantern just floats upwards
-        this.transform.position = this.transform.position + Vector3.up * this.Speed * Time.deltaTime;
+        if (this.trackingTransform == null)
+        {
+            // The lantern just floats upwards
+            this.transform.position = this.transform.position + Vector3.up * this.Speed * Time.deltaTime;
+            return;
+        }
+
+        if (this.trackingTransform.position == this.previousFrame)
+        {
+            // Ending condition for transform-tracking
+            this.trackingTransform = null;
+            return;
+        }
+
+        this.previousFrame = this.trackingTransform.position;
+        this.transform.position = this.previousFrame + this.trackingOffset;
+    }
+
+    public void setTrackingTransform(Transform transform, Vector3 trackingOffset) {
+        this.trackingTransform = transform;
+        Vector3 immediatePosition = this.trackingTransform.position;
+        this.previousFrame = immediatePosition - Vector3.up;
+        this.trackingOffset = trackingOffset;
+
+        this.transform.position = immediatePosition + this.trackingOffset;
     }
 }
