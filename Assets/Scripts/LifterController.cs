@@ -22,7 +22,7 @@ public class LifterController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetAxis("Jump") != 0)
         {
             if (this.firedAlready)
             {
