@@ -20,7 +20,8 @@ public class LifterController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
             if (this.firedAlready)
             {
                 // We are done... (animation is still playing)

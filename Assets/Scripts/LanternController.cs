@@ -30,7 +30,8 @@ public class LanternController : MonoBehaviour
         this.transform.position = this.previousFrame + this.trackingOffset;
     }
 
-    public void setTrackingTransform(Transform transform, Vector3 trackingOffset) {
+    public void setTrackingTransform(Transform transform, Vector3 trackingOffset)
+    {
         this.trackingTransform = transform;
         this.trackingOffset = trackingOffset;
 
