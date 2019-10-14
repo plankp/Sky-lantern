@@ -719,6 +719,7 @@ GameObject:
   - component: {fileID: 5390615202395271771}
   - component: {fileID: 1132087106156367821}
   - component: {fileID: 1132087106156367820}
+  - component: {fileID: 4806402153778708911}
   m_Layer: 0
   m_Name: tower crane
   m_TagString: Untagged
@@ -776,7 +777,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70fa443c15eff4cedb1436c052f35e34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yay: []
   Rotating:
   - {fileID: 6566985262768821118}
   - {fileID: 5712024137634911113}
@@ -788,3 +788,18 @@ MonoBehaviour:
   PivotOffset: {x: 0.45, y: 0, z: 14.7}
   Translating:
   - {fileID: 67534959349110111}
+--- !u!114 &4806402153778708911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8976824351261311048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b6e9f4c6f604a349486f58908949d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateSpeed: 6
+  InvertSpeed: 0.06
+  InvertPhase: 1
