@@ -11,8 +11,10 @@ public class LanternController : MonoBehaviour
     public float Speed = 1.0f;
     public float InputScale = 1.0f;
 
-    public bool GuidedByTransform {
-        get {
+    public bool GuidedByTransform
+    {
+        get
+        {
             return this.trackingTransform != null;
         }
     }
