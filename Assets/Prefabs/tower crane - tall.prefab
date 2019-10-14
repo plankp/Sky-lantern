@@ -300,8 +300,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8336181392187725376}
   - component: {fileID: 3948148350381702836}
-  - component: {fileID: 3948148350381702489}
   - component: {fileID: 3948148350381702494}
+  - component: {fileID: 771162385}
   m_Layer: 0
   m_Name: tower crane - tall
   m_TagString: Untagged
@@ -347,21 +347,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &3948148350381702489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5038200974616093779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5b6e9f4c6f604a349486f58908949d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RotateSpeed: 8
-  InvertSpeed: 0.13
-  InvertPhase: 3
 --- !u!114 &3948148350381702494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,6 +370,22 @@ MonoBehaviour:
   PivotOffset: {x: 0.45, y: 0, z: 24.7}
   Translating:
   - {fileID: 4148010456208486724}
+--- !u!114 &771162385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5038200974616093779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f91ad57e94dc44caf9538b01c14b1382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateSpeed: 0.25
+  RotateRate: 0.25
+  InvertSpeed: 0.13
+  InvertPhase: 3
 --- !u!1 &6122064993024756124
 GameObject:
   m_ObjectHideFlags: 0
