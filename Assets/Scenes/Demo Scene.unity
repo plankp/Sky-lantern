@@ -120,7 +120,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &416116615
+--- !u!1 &672217612 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: b50f4dc1908cf4d88895dd715af7957e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1712428688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &672217615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672217612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b57b7d703a4c417ea09547783bedf2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LanternPrefab: {fileID: 7925422718908720274, guid: 681b17e90e84748c286c35c194484f33,
+    type: 3}
+  PlacementOffset: {x: 0, y: 0.25, z: 0.85}
+  ReferencePoint: {fileID: 2146388515}
+  Camera: {fileID: 963194229}
+--- !u!1001 &878898720
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -135,7 +158,7 @@ PrefabInstance:
     - target: {fileID: 2599561829046099663, guid: 8327ff55d1c614dbabd89c64f66a6c4c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.09
+      value: -4.63
       objectReference: {fileID: 0}
     - target: {fileID: 2599561829046099663, guid: 8327ff55d1c614dbabd89c64f66a6c4c,
         type: 3}
@@ -145,7 +168,7 @@ PrefabInstance:
     - target: {fileID: 2599561829046099663, guid: 8327ff55d1c614dbabd89c64f66a6c4c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.81
+      value: 4.72
       objectReference: {fileID: 0}
     - target: {fileID: 2599561829046099663, guid: 8327ff55d1c614dbabd89c64f66a6c4c,
         type: 3}
@@ -189,29 +212,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8327ff55d1c614dbabd89c64f66a6c4c, type: 3}
---- !u!1 &672217612 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: b50f4dc1908cf4d88895dd715af7957e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1712428688}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &672217615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672217612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b57b7d703a4c417ea09547783bedf2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LanternPrefab: {fileID: 7925422718908720274, guid: 681b17e90e84748c286c35c194484f33,
-    type: 3}
-  PlacementOffset: {x: 0, y: 0.25, z: 0.85}
-  ReferencePoint: {fileID: 2146388515}
-  Camera: {fileID: 963194229}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
