@@ -8,9 +8,8 @@ public class LanternController : MonoBehaviour
     private Vector3 previousFrame;
     private Vector3 trackingOffset;
 
-    private Vector3 velocity = Vector3.zero;
-
     public float Speed = 1.0f;
+    public float InputScale = 1.0f;
 
     public bool GuidedByTransform {
         get {
@@ -37,10 +36,9 @@ public class LanternController : MonoBehaviour
 
         float horz = Input.GetAxis("Horizontal");
         float vert = Input.GetAxis("Vertical");
-        this.velocity += new Vector3(horz, 0, vert);
 
         // The lantern just floats upwards (with sideway sway)
-        this.transform.position = this.transform.position + (this.Speed * Vector3.up + this.velocity.normalized) * Time.deltaTime;
+        this.transform.position += (this.Speed * Vector3.up + this.InputScale * new Vector3(horz, 0, vert)) * Time.deltaTime;
     }
 
     public void setTrackingTransform(Transform transform, Vector3 trackingOffset)
